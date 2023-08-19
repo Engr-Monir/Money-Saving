@@ -55,7 +55,7 @@ document.getElementById('save-id').addEventListener('click',function(){
 
     let TotalExpance=rentCost+clothesCost+foodsCost;
     let Blance= TotalIncome-TotalExpance;
-    let discount=Save/Blance;
+    let discount= (Save / 100) * Blance;
     let remeanigBlance= Blance-discount;
     
     setTextElementById('Total-Expense', TotalExpance);
